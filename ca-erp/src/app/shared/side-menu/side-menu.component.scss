@@ -1,0 +1,12 @@
+.menu-sub {
+  display: block;
+  max-height: 0;  /* Initially collapsed */
+  overflow: hidden;  /* Prevent content from overflowing */
+  transition: max-height 0.3s ease-out;  /* Smooth closing animation */
+}
+
+.menu-sub.expanded {
+  max-height: 500px;  /* Adjust based on your submenu content height */
+  transition: max-height 0.3s ease-in;  /* Smooth opening animation */
+}
+

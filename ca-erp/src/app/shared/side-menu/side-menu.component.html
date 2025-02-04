@@ -1,0 +1,43 @@
+
+<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+  <div class="app-brand demo">
+    <a class="app-brand-link">
+      <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
+    </a>
+    <a (click)="toggleLayout()" class="layout-menu-toggle menu-link text-large ms-auto">
+      <i class="bx bx-chevron-left bx-sm align-middle"></i>
+    </a>
+  </div>
+
+  <div class="menu-inner-shadow"></div>
+
+  
+  <ul class="menu-inner py-1 ps">
+    <ng-container *ngFor="let item of menuItems">
+      <li [class.menu-item]="true" [class.active]="item.active">
+        <a 
+          *ngIf="!item.submenu; else hasSubmenu" 
+          class="menu-link"
+        >
+          <i [class]="'menu-icon tf-icons ' + item.icon"></i>
+          <div [attr.data-i18n]="item.label">{{ item.label }}</div>
+        </a>
+
+        <ng-template #hasSubmenu>
+          <a  (click)="toggleSubmenu(item)" class="menu-link menu-toggle">
+            <i [class]="'menu-icon tf-icons ' + item.icon"></i>
+            <div [attr.data-i18n]="item.label">{{ item.label }}</div>
+          </a>
+          
+          <ul class="menu-sub" [ngClass]="{'expanded': item.expanded}">
+            <li *ngFor="let subItem of item.submenu" class="menu-item">
+              <a [href]="subItem.link" class="menu-link">
+                <div [attr.data-i18n]="subItem.label">{{ subItem.label }}</div>
+              </a>
+            </li>
+          </ul>
+        </ng-template>
+      </li>
+    </ng-container>
+  </ul>
+</aside>
