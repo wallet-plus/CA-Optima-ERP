@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  toggleLayout() {
+    const htmlElement = document.documentElement;
+    htmlElement.classList.toggle('layout-compact');
+    htmlElement.classList.toggle('layout-menu-expanded');
+  }
+
 }

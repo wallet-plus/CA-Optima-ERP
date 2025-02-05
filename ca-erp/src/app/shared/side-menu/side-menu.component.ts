@@ -6,17 +6,25 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
   styleUrls: ['./side-menu.component.scss']
 })
 export class SideMenuComponent {
-  isMenuCollapsed = false;
+  isMenuCollapsed = true;
 
   constructor(private renderer: Renderer2, private el: ElementRef) {}
 
+  
   toggleLayout() {
-    // Toggle the collapsed state
-    this.isMenuCollapsed = !this.isMenuCollapsed;
-
-    // Update the classes on the <html> tag based on the collapsed state
-    this.toggleClasses();
+    const htmlElement = document.documentElement;
+    htmlElement.classList.toggle('layout-compact');
+    htmlElement.classList.toggle('layout-menu-expanded');
   }
+
+
+  // toggleLayout() {
+  //   // Toggle the collapsed state
+  //   this.isMenuCollapsed = !this.isMenuCollapsed;
+
+  //   // Update the classes on the <html> tag based on the collapsed state
+  //   this.toggleClasses();
+  // }
 
   toggleClasses() {
     // Access the <html> element (use ElementRef to get the native DOM element)
