@@ -2,9 +2,10 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+// @import url('../src/assets/vendor/css/demo.css');
 @import url('../src/assets/vendor/css/pages/page-auth.css');
-
+@import url('../src/assets/vendor/css/pages/front-page.css');
+@import url('../src/assets/vendor/css/pages/front-page-landing.css');
 .menu .app-brand.demo {
     height: 64px;
     margin-top: 12px;
