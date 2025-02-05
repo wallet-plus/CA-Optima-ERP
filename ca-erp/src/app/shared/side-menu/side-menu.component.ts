@@ -52,210 +52,115 @@ export class SideMenuComponent {
 
   menuItems = [
     {
-      "label": "Dashboard",
-      "icon": "bx bx-home-circle",
-      "link": "index.html",
-      "active": false
-    },
-    {
-      "label": "Layouts",
-      "icon": "bx bx-layout",
-      "link": null,
-      "expanded": false,
-
-      "submenu": [
-        {
-          "label": "Without menu",
-          "link": "layouts-without-menu.html"
-        },
-        {
-          "label": "Without navbar",
-          "link": "layouts-without-navbar.html"
-        },
-        {
-          "label": "Container",
-          "link": "layouts-container.html"
-        },
-        {
-          "label": "Fluid",
-          "link": "layouts-fluid.html"
-        },
-        {
-          "label": "Blank",
-          "link": "layouts-blank.html"
-        }
+      module: "Dashboard",
+      icon: "bx bx-pie-chart-alt",
+      active: false,
+      expanded: false,
+      submodules: [
+        { label: "Summary", icon: "bx bx-pie-chart", link: "dashboard-summary.html" },
+        { label: "Reports", icon: "bx bx-file", link: "financial-reports.html" },
+        { label: "Compliance", icon: "bx bx-check-circle", link: "compliance-summary.html" }
       ]
     },
     {
-      "header": "Pages"
-    },
-    {
-      "label": "Account Settings",
-      "icon": "bx bx-dock-top",
-      "link": null,
-      "submenu": [
-        {
-          "label": "Account",
-          "link": "pages-account-settings-account.html"
-        },
-        {
-          "label": "Notifications",
-          "link": "pages-account-settings-notifications.html"
-        },
-        {
-          "label": "Connections",
-          "link": "pages-account-settings-connections.html"
-        }
+      module: "User Management",
+      icon: "bx bx-user-circle",
+      active: false,
+      expanded: false,
+      submodules: [
+        { label: "Authentication", icon: "bx bx-lock", link: "user-authentication.html" },
+        { label: "Roles", icon: "bx bx-shield", link: "roles.html" },
+        { label: "Permissions", icon: "bx bx-check-shield", link: "permissions.html" },
+        { label: "Employees", icon: "bx bx-user", link: "employees.html" }
       ]
     },
     {
-      "label": "Authentications",
-      "icon": "bx bx-lock-open-alt",
-      "link": null,
-      "submenu": [
-        {
-          "label": "Login",
-          "link": "auth-login-basic.html"
-        },
-        {
-          "label": "Register",
-          "link": "auth-register-basic.html"
-        },
-        {
-          "label": "Forgot Password",
-          "link": "auth-forgot-password-basic.html"
-        }
+      module: "Client Management",
+      icon: "bx bx-briefcase",
+      active: false,
+      expanded: false,
+      submodules: [
+        { label: "Clients", icon: "bx bx-building", link: "client-master.html" },
+        { label: "Leads", icon: "bx bx-lead", link: "leads.html" },
+        { label: "Engagements", icon: "bx bx-history", link: "engagements.html" }
       ]
     },
     {
-      "label": "Misc",
-      "icon": "bx bx-cube-alt",
-      "link": null,
-      "submenu": [
-        {
-          "label": "Error",
-          "link": "pages-misc-error.html"
-        },
-        {
-          "label": "Under Maintenance",
-          "link": "pages-misc-under-maintenance.html"
-        }
+      module: "Finance",
+      icon: "bx bx-money",
+      active: false,
+      expanded: false,
+      submodules: [
+        { label: "Ledger", icon: "bx bx-book", link: "general-ledger.html" },
+        { label: "Accounts", icon: "bx bx-grid-alt", link: "chart-of-accounts.html" },
+        { label: "Invoicing", icon: "bx bx-file", link: "billing-invoicing.html" },
+        { label: "Payments", icon: "bx bx-credit-card", link: "payment-tracking.html" },
+        { label: "Receivables", icon: "bx bx-dollar-circle", link: "receivables-follow-ups.html" },
+        { label: "Payroll", icon: "bx bx-briefcase", link: "payroll-management.html" },
+        { label: "Reports", icon: "bx bx-pie-chart-alt", link: "financial-reports.html" }
       ]
     },
     {
-      "header": "Components"
-    },
-    {
-      "label": "Cards",
-      "icon": "bx bx-collection",
-      "link": "cards-basic.html",
-      "submenu": []
-    },
-    {
-      "label": "User Interface",
-      "icon": "bx bx-box",
-      "link": null,
-      "submenu": [
-        {
-          "label": "Accordion",
-          "link": "ui-accordion.html"
-        },
-        {
-          "label": "Alerts",
-          "link": "ui-alerts.html"
-        },
-        {
-          "label": "Badges",
-          "link": "ui-badges.html"
-        },
-        {
-          "label": "Buttons",
-          "link": "ui-buttons.html"
-        },
-        {
-          "label": "Carousel",
-          "link": "ui-carousel.html"
-        },
-        {
-          "label": "Collapse",
-          "link": "ui-collapse.html"
-        },
-        {
-          "label": "Dropdowns",
-          "link": "ui-dropdowns.html"
-        },
-        {
-          "label": "Footer",
-          "link": "ui-footer.html"
-        },
-        {
-          "label": "List Groups",
-          "link": "ui-list-groups.html"
-        },
-        {
-          "label": "Modals",
-          "link": "ui-modals.html"
-        },
-        {
-          "label": "Navbar",
-          "link": "ui-navbar.html"
-        },
-        {
-          "label": "Offcanvas",
-          "link": "ui-offcanvas.html"
-        },
-        {
-          "label": "Pagination & Breadcrumbs",
-          "link": "ui-pagination-breadcrumbs.html"
-        },
-        {
-          "label": "Progress",
-          "link": "ui-progress.html"
-        },
-        {
-          "label": "Spinners",
-          "link": "ui-spinners.html"
-        },
-        {
-          "label": "Tabs & Pills",
-          "link": "ui-tabs-pills.html"
-        },
-        {
-          "label": "Toasts",
-          "link": "ui-toasts.html"
-        },
-        {
-          "label": "Tooltips & Popovers",
-          "link": "ui-tooltips-popovers.html"
-        },
-        {
-          "label": "Typography",
-          "link": "ui-typography.html"
-        }
+      module: "Task Tracking",
+      icon: "bx bx-task",
+      active: false,
+      expanded: false,
+      submodules: [
+        { label: "Job Sheets", icon: "bx bx-note", link: "job-sheets.html" },
+        { label: "Assignments", icon: "bx bx-check-square", link: "task-assignments.html" },
+        { label: "Summary", icon: "bx bx-chart", link: "task-summary.html" }
       ]
     },
     {
-      "label": "Extended UI",
-      "icon": "bx bx-copy",
-      "link": null,
-      "submenu": [
-        {
-          "label": "Perfect Scrollbar",
-          "link": "extended-ui-perfect-scrollbar.html"
-        },
-        {
-          "label": "Text Divider",
-          "link": "extended-ui-text-divider.html"
-        }
+      module: "Audit",
+      icon: "bx bx-search",
+      active: false,
+      expanded: false,
+      submodules: [
+        { label: "Assignments", icon: "bx bx-check-circle", link: "audit-assignments.html" },
+        { label: "Reports", icon: "bx bx-file", link: "audit-reports.html" },
+        { label: "Checklists", icon: "bx bx-list-ul", link: "audit-checklists.html" },
+        { label: "JSON Files", icon: "bx bx-code", link: "json-files.html" }
+      ]
+    },
+    {
+      module: "Income Tax",
+      icon: "bx bx-calculator",
+      active: false,
+      expanded: false,
+      submodules: [
+        { label: "ITR Utility", icon: "bx bx-file", link: "itr-utility.html" },
+        { label: "Tax Computation", icon: "bx bx-calculator", link: "tax-computation.html" },
+        { label: "E-Filing", icon: "bx bx-code", link: "efile.html" },
+        { label: "Data Flow", icon: "bx bx-arrow-right", link: "data-flow.html" }
+      ]
+    },
+    {
+      module: "Compliance",
+      icon: "bx bx-folder",
+      active: false,
+      expanded: false,
+      submodules: [
+        { label: "IT Notices", icon: "bx bx-file", link: "it-notices.html" },
+        { label: "Communications", icon: "bx bx-envelope", link: "communications.html" },
+        { label: "Case Laws", icon: "bx bx-library", link: "case-laws.html" }
       ]
     }
   ];
+  
+  
+  
 
   toggleMenu(item : any){
     item.expanded = !item.expanded;
   }
 
   toggleSubmenu(item : any){
+    this.menuItems.forEach((menuItem) => {
+      if (menuItem !== item) {
+        menuItem.expanded = false;
+      }
+    });
     item.expanded = !item.expanded;
   }
   
