@@ -71,7 +71,7 @@ export class SideMenuComponent {
         { label: "Authentication", icon: "bx bx-lock", link: "user-authentication.html" },
         { label: "Roles", icon: "bx bx-shield", link: "roles.html" },
         { label: "Permissions", icon: "bx bx-check-shield", link: "permissions.html" },
-        { label: "Employees", icon: "bx bx-user", link: "employees.html" }
+        { label: "Employees", icon: "bx bx-user", link: "employee" }
       ]
     },
     {
