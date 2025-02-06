@@ -69,8 +69,8 @@ export class SideMenuComponent {
       expanded: false,
       submodules: [
         { label: "Authentication", icon: "bx bx-lock", link: "user-authentication.html" },
-        { label: "Roles", icon: "bx bx-shield", link: "roles.html" },
-        { label: "Permissions", icon: "bx bx-check-shield", link: "permissions.html" },
+        { label: "Roles", icon: "bx bx-shield", link: "user/roles" },
+        { label: "Permissions", icon: "bx bx-check-shield", link: "user/permissions" },
         { label: "Employees", icon: "bx bx-user", link: "employee" }
       ]
     },
@@ -80,9 +80,9 @@ export class SideMenuComponent {
       active: false,
       expanded: false,
       submodules: [
-        { label: "Clients", icon: "bx bx-building", link: "client-master.html" },
-        { label: "Leads", icon: "bx bx-lead", link: "leads.html" },
-        { label: "Engagements", icon: "bx bx-history", link: "engagements.html" }
+        { label: "Clients", icon: "bx bx-building", link: "clients" },
+        { label: "Leads", icon: "bx bx-building", link: "clients/leads" },
+        // { label: "Engagements", icon: "bx bx-history", link: "engagements.html" }
       ]
     },
     {
@@ -91,13 +91,13 @@ export class SideMenuComponent {
       active: false,
       expanded: false,
       submodules: [
-        { label: "Ledger", icon: "bx bx-book", link: "general-ledger.html" },
-        { label: "Accounts", icon: "bx bx-grid-alt", link: "chart-of-accounts.html" },
-        { label: "Invoicing", icon: "bx bx-file", link: "billing-invoicing.html" },
-        { label: "Payments", icon: "bx bx-credit-card", link: "payment-tracking.html" },
-        { label: "Receivables", icon: "bx bx-dollar-circle", link: "receivables-follow-ups.html" },
-        { label: "Payroll", icon: "bx bx-briefcase", link: "payroll-management.html" },
-        { label: "Reports", icon: "bx bx-pie-chart-alt", link: "financial-reports.html" }
+        { label: "Ledger", icon: "bx bx-book", link: "finance/ledger" },
+        { label: "Accounts", icon: "bx bx-grid-alt", link: "finance/accounts" },
+        { label: "Invoicing", icon: "bx bx-file", link: "finance/invoicing" },
+        { label: "Payments", icon: "bx bx-credit-card", link: "finance/payments" },
+        { label: "Receivables", icon: "bx bx-dollar-circle", link: "finance/receivables" },
+        { label: "Payroll", icon: "bx bx-briefcase", link: "finance/payroll" },
+        { label: "Reports", icon: "bx bx-pie-chart-alt", link: "finance/reports" }
       ]
     },
     {
