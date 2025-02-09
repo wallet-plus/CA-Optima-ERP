@@ -1,0 +1,63 @@
+<div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Qualification Details</h5>
+      <button type="button" class="btn-close" aria-label="Close" (click)="closeDialog()"></button>
+    </div>
+    <div class="modal-body">
+      <form [formGroup]="qualificationForm">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="form-label">Qualification</label>
+            <input type="text" class="form-control" formControlName="qualification">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Specialization</label>
+            <input type="text" class="form-control" formControlName="specialization">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">College</label>
+            <input type="text" class="form-control" formControlName="college">
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="form-label">Country</label>
+            <input type="text" class="form-control" formControlName="country">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">City</label>
+            <input type="text" class="form-control" formControlName="city">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Starting Date</label>
+            <input type="date" class="form-control" formControlName="starting_date">
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="form-label">Completion Date</label>
+            <input type="date" class="form-control" formControlName="completion_date">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Marks</label>
+            <input type="number" class="form-control" formControlName="marks">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Grade</label>
+            <input type="text" class="form-control" formControlName="grade">
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-4 form-check d-flex align-items-center">
+            <input class="form-check-input me-2" type="checkbox" formControlName="is_highest_qualification">
+            <label class="form-check-label">Highest Qualification</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-secondary" (click)="closeDialog()">Close</button>
+      <button type="button" class="btn btn-primary" (click)="saveChanges()">Save changes</button>
+    </div>
+  </div>
+  

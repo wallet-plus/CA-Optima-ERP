@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee-details.component.scss']
 })
 export class EmployeeDetailsComponent {
+  selectedTab = 0; 
 
 }

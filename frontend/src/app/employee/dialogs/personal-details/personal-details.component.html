@@ -1,0 +1,68 @@
+<div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel1">Profile Details</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeDialog()"></button>
+    </div>
+    <div class="modal-body">
+      <form [formGroup]="profileForm">
+        <div class="row g-3">
+          <div class="col-md-4 col-12">
+            <label for="nameBasic" class="form-label">Name</label>
+            <input type="text" id="nameBasic" class="form-control" formControlName="name">
+          </div>
+          <div class="col-md-4 col-12">
+            <label for="genderBasic" class="form-label">Gender</label>
+            <input type="text" id="genderBasic" class="form-control" formControlName="gender">
+          </div>
+          <div class="col-md-4 col-12">
+            <label for="dobBasic" class="form-label">Date of Birth</label>
+            <input type="text" id="dobBasic" class="form-control" formControlName="dob">
+          </div>
+        </div>
+  
+        <div class="row g-3">
+          <div class="col-md-4 col-12">
+            <label for="bloodGroup" class="form-label">Blood Group</label>
+            <input type="text" id="bloodGroup" class="form-control" formControlName="bloodGroup">
+          </div>
+          <div class="col-md-4 col-12">
+            <label for="maritalStatus" class="form-label">Marital Status</label>
+            <input type="text" id="maritalStatus" class="form-control" formControlName="maritalStatus">
+          </div>
+          <div class="col-md-4 col-12">
+            <label for="anniversaryDate" class="form-label">Anniversary Date</label>
+            <input type="text" id="anniversaryDate" class="form-control" formControlName="anniversaryDate">
+          </div>
+        </div>
+  
+        <div class="row g-3">
+          <div class="col-md-4 col-12">
+            <label for="guardianName" class="form-label">Guardian Name</label>
+            <input type="text" id="guardianName" class="form-control" formControlName="guardianName">
+          </div>
+          <div class="col-md-4 col-12">
+            <label for="nationality" class="form-label">Nationality</label>
+            <input type="text" id="nationality" class="form-control" formControlName="nationality">
+          </div>
+          <div class="col-md-4 col-12">
+            <label for="religion" class="form-label">Religion</label>
+            <input type="text" id="religion" class="form-control" formControlName="religion">
+          </div>
+        </div>
+  
+        <div class="row g-3">
+          <div class="col-12">
+            <label for="signature" class="form-label">Signature</label>
+            <input type="text" id="signature" class="form-control" formControlName="signature">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" (click)="closeDialog()">
+        Close
+      </button>
+      <button type="button" class="btn btn-primary" (click)="saveChanges()">Save changes</button>
+    </div>
+  </div>
+  

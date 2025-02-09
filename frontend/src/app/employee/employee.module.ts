@@ -4,6 +4,15 @@ import { EmployeeComponent } from './employee.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './components/employee-details/employee-details.component';
 import { RouterModule, Routes } from '@angular/router';
+import { MaterialModule } from '../material.module';
+import { ContactDetailsComponent } from './dialogs/contact-details/contact-details.component';
+import { PersonalDetailsComponent } from './dialogs/personal-details/personal-details.component';
+import { FamilyDetailsComponent } from './dialogs/family-details/family-details.component';
+import { QualificationComponent } from './dialogs/qualification/qualification.component';
+import { LanguageComponent } from './dialogs/language/language.component';
+import { ExperienceComponent } from './dialogs/experience/experience.component';
+import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -21,7 +30,8 @@ const routes: Routes = [
         },
         {
           path : 'details',
-          component : EmployeeDetailsComponent 
+          component : EmployeeDetailsComponent ,
+          
         }
       ]
     }
@@ -31,11 +41,20 @@ const routes: Routes = [
   declarations: [
     EmployeeComponent,
     EmployeeListComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    ContactDetailsComponent,
+    PersonalDetailsComponent,
+    FamilyDetailsComponent,
+    QualificationComponent,
+    LanguageComponent,
+    ExperienceComponent,
+    PersonalInformationComponent
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class EmployeeModule { }

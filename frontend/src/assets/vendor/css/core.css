@@ -9585,7 +9585,19 @@ button.list-group-item-gray.active {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 1.5rem !important;
 }
 
 .mb-auto {
