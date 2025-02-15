@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Api\CompanyController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -26,5 +27,10 @@ Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 Route::post('forgot-password', [AuthController::class, 'forgotPassword']);
 Route::post('reset-password', [AuthController::class, 'resetPassword']);
+
+
+
+
+Route::apiResource('companies', CompanyController::class);
 
 Route::middleware('auth:sanctum')->post('logout', [AuthController::class, 'logout']);

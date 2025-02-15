@@ -1,0 +1,134 @@
+
+{
+  "info": {
+    "_postman_id": "b8a4cde6-6f30-4a5e-9fdd-123456789abc",
+    "name": "Company API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "A collection of API endpoints for managing companies."
+  },
+  "item": [
+    {
+      "name": "Get All Companies",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/companies",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "companies"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Company",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Test Company\",\n    \"address\": \"123 Test Street\",\n    \"city\": \"Test City\",\n    \"state\": \"Test State\",\n    \"postal_code\": \"12345\",\n    \"country\": \"Test Country\",\n    \"email\": \"test@example.com\",\n    \"mobile_number\": \"1234567890\",\n    \"telephone\": \"0987654321\",\n    \"website_url\": \"http://example.com\",\n    \"registration_number\": \"REG123\",\n    \"tax_id\": \"TAX123\",\n    \"industry\": \"Software\",\n    \"logo_url\": \"http://example.com/logo.png\",\n    \"established_date\": \"2020-01-01\",\n    \"description\": \"A test company\",\n    \"linkedin_url\": \"http://linkedin.com/test\",\n    \"facebook_url\": \"http://facebook.com/test\",\n    \"twitter_url\": \"http://twitter.com/test\",\n    \"status\": \"Active\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/companies",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "companies"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single Company",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/companies/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "companies",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Company",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Updated Company\",\n    \"address\": \"456 Updated Street\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/companies/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "companies",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Company",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/companies/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "companies",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
