@@ -25,94 +25,66 @@ A brief description of what the project does.
 
 1. **Clone the Repository**
 
-   ```bash
+   `bash
    git clone https://github.com/your-username/your-repo.git
-   cd your-repo
-Download Dependencies
+   cd your-repo`
+### Download Dependencies
 
-bash
-Copy
-Edit
-composer install
-Copy Environment File
+`composer install`
 
-bash
-Copy
-Edit
+### Copy Environment File
+
 cp .env.example .env
 Generate Application Key
 
-bash
-Copy
-Edit
 php artisan key:generate
-Configuration
+
+## Configuration
 Edit the .env file to set your database credentials and other configuration values.
 If you're using any external services (like mail, queue, etc.), ensure you update the respective configuration in .env.
 Database Setup
-Run Migrations
+### Run Migrations
 
-bash
-Copy
-Edit
-php artisan migrate
+`php artisan migrate`
 This command will create the necessary tables in your database.
 
 (Optional) Seed the Database
 
 If you have seeders:
 
-bash
-Copy
-Edit
-php artisan db:seed
+`php artisan db:seed`
 Running the Application
 Start the Development Server
 
-bash
-Copy
-Edit
-php artisan serve
+`php artisan serve`
 By default, the application runs on http://localhost:8000.
 
 Using a Different Port
 
 If you need to run on a different port:
 
-bash
-Copy
-Edit
-php artisan serve --port=8080
+`php artisan serve --port=8080`
 Additional Developer Requirements
 Node.js & NPM
 
 If your project includes frontend dependencies, install them:
 
-bash
-Copy
-Edit
-npm install
-npm run dev
-Caching
+`npm install
+npm run dev`
+
+## Caching
 
 Clear the configuration cache if needed:
 
-bash
-Copy
-Edit
-php artisan config:cache
-Testing
+`php artisan config:cache`
+
+## Testing
+
 To run the tests:
 
-bash
-Copy
-Edit
-php artisan test
-License
-This project is licensed under the MIT License.
+`php artisan test`
 
-vbnet
-Copy
-Edit
+## License
+This project is licensed under the MIT License.
 
 Feel free to adjust any section to better suit your project's requirements.
