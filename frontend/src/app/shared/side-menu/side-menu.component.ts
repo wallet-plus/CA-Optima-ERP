@@ -1,4 +1,5 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-side-menu',
@@ -6,6 +7,7 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
   styleUrls: ['./side-menu.component.scss']
 })
 export class SideMenuComponent {
+  appName : string = environment.appName;
   isMenuCollapsed = true;
 
   constructor(private renderer: Renderer2, private el: ElementRef) {}
