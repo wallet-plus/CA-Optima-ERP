@@ -42,7 +42,9 @@ php artisan key:generate
 ## Configuration
 Edit the .env file to set your database credentials and other configuration values.
 If you're using any external services (like mail, queue, etc.), ensure you update the respective configuration in .env.
-Database Setup
+
+
+## Database Setup
 ### Run Migrations
 
 `php artisan migrate`
@@ -53,7 +55,8 @@ This command will create the necessary tables in your database.
 If you have seeders:
 
 `php artisan db:seed`
-Running the Application
+
+## Running the Application
 Start the Development Server
 
 `php artisan serve`
@@ -64,7 +67,9 @@ Using a Different Port
 If you need to run on a different port:
 
 `php artisan serve --port=8080`
-Additional Developer Requirements
+
+
+## Additional Developer Requirements
 Node.js & NPM
 
 If your project includes frontend dependencies, install them:
