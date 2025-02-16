@@ -73,7 +73,8 @@ export class SideMenuComponent {
         { label: "Authentication", icon: "bx bx-lock", link: "user-authentication.html" },
         { label: "Roles", icon: "bx bx-shield", link: "user/roles" },
         { label: "Permissions", icon: "bx bx-check-shield", link: "user/permissions" },
-        { label: "Employees", icon: "bx bx-user", link: "employee" }
+        { label: "Employees", icon: "bx bx-user", link: "employee" },
+        { label: "Company", icon: "bx bx-user", link: "company" }
       ]
     },
     {
@@ -82,8 +83,8 @@ export class SideMenuComponent {
       active: false,
       expanded: false,
       submodules: [
-        { label: "Clients", icon: "bx bx-building", link: "clients" },
-        { label: "Leads", icon: "bx bx-building", link: "clients/leads" },
+        { label: "Clients", icon: "bx bx-building", link: "erp/clients" },
+        { label: "Leads", icon: "bx bx-building", link: "erp/leads" },
         // { label: "Engagements", icon: "bx bx-history", link: "engagements.html" }
       ]
     },
