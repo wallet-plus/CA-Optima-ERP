@@ -34,82 +34,23 @@ WalletPlus Software will be designed as a cloud-based or on-premise solution, pr
 
 ### 3. Application Modules & Components
 
-#### 3.1 ERP Module
-- **Components & Efforts:**
-  
-  - **Client Management**
-    - **Design:** 2 weeks
-    - **Development:** 4 weeks
-    - **Integration:** 2 weeks
-    - **QA & Testing:** 2 weeks
-  
-  - **Lead Management**
-    - **Design:** 1 week
-    - **Development:** 3 weeks
-    - **Integration:** 2 weeks
-    - **QA & Testing:** 2 weeks
-  
-  - **Accounting System**
-    - **Design:** 3 weeks
-    - **Development:** 6 weeks
-    - **Integration:** 3 weeks
-    - **QA & Testing:** 3 weeks
-  
-  - **Payroll Management**
-    - **Design:** 2 weeks
-    - **Development:** 5 weeks
-    - **Integration:** 3 weeks
-    - **QA & Testing:** 2 weeks
-  
-  - **Billing & Receipts**
-    - **Design:** 2 weeks
-    - **Development:** 4 weeks
-    - **Integration:** 3 weeks
-    - **QA & Testing:** 2 weeks
-  
-  - **Attendance Tracking**
-    - **Design:** 1 week
-    - **Development:** 2 weeks
-    - **Integration:** 2 weeks
-    - **QA & Testing:** 2 weeks
-  
-  - **Task Tracking**
-    - **Design:** 2 weeks
-    - **Development:** 4 weeks
-    - **Integration:** 2 weeks
-    - **QA & Testing:** 2 weeks
-
-#### 3.2 Audit Module
-- **Components:**
-  - Financial Report Preparation
-  - Audit Checklists
-  - JSON Generation for Compliance
-- **Efforts:**
-  - **Development:** 6 weeks
-  - **Design:** 2 weeks
-  - **Integration:** 3 weeks
-  - **QA & Testing:** 3 weeks
-
-#### 3.3 Income Tax Module
-- **Components:**
-  - Tax Computation
-  - ITR Preparation Utility
-  - JSON Generation for E-filing
-- **Efforts:**
-  - **Development:** 7 weeks
-  - **Design:** 3 weeks
-  - **Integration:** 4 weeks
-  - **QA & Testing:** 4 weeks
-
-#### 3.4 Optional Modules
-- **Components:**
-  - Communication Management
-  - Knowledge Management Database
-- **Efforts:**
-  - **Development:** 5 weeks
-  - **Design:** 2 weeks
-  - **Integration:** 3 weeks
-  - **QA & Testing:** 3 weeks
+| Module | Component | Design | Development | Integration | QA & Testing |
+|--------|-----------|--------|-------------|-------------|-------------|
+| **ERP Module** | Client Management | 2 weeks | 4 weeks | 2 weeks | 2 weeks |
+|  | Lead Management | 1 week | 3 weeks | 2 weeks | 2 weeks |
+|  | Accounting System | 3 weeks | 6 weeks | 3 weeks | 3 weeks |
+|  | Payroll Management | 2 weeks | 5 weeks | 3 weeks | 2 weeks |
+|  | Billing & Receipts | 2 weeks | 4 weeks | 3 weeks | 2 weeks |
+|  | Attendance Tracking | 1 week | 2 weeks | 2 weeks | 2 weeks |
+|  | Task Tracking | 2 weeks | 4 weeks | 2 weeks | 2 weeks |
+| **Audit Module** | Financial Report Preparation | 2 weeks | 6 weeks | 3 weeks | 3 weeks |
+|  | Audit Checklists | 2 weeks | 6 weeks | 3 weeks | 3 weeks |
+|  | JSON Generation for Compliance | 2 weeks | 6 weeks | 3 weeks | 3 weeks |
+| **Income Tax Module** | Tax Computation | 3 weeks | 7 weeks | 4 weeks | 4 weeks |
+|  | ITR Preparation Utility | 3 weeks | 7 weeks | 4 weeks | 4 weeks |
+|  | JSON Generation for E-filing | 3 weeks | 7 weeks | 4 weeks | 4 weeks |
+| **Optional Modules** | Communication Management | 2 weeks | 5 weeks | 3 weeks | 3 weeks |
+|  | Knowledge Management Database | 2 weeks | 5 weeks | 3 weeks | 3 weeks |
 
 ---
 
@@ -169,3 +110,5 @@ WalletPlus Software will be designed as a cloud-based or on-premise solution, pr
 - **Phase-wise payments**: Payments will be made upon completion of each major milestone.
 - **Support & Maintenance**: A separate contract for ongoing support will be provided post-deployment.
 - **Change Requests**: Any major scope changes will require mutual agreement on cost and timeline adjustments.
+
+---
