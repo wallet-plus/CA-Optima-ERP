@@ -10,12 +10,12 @@ const routes: Routes = [
     pathMatch : 'full'
   },
   {
-    path : 'register',
-    loadChildren : () => import('./authentication/register/register.module').then(m =>m.RegisterModule)
-  },
-  {
     path : 'login',
     loadChildren : () => import('./authentication/login/login.module').then(m =>m.LoginModule)
+  },
+  {
+    path : 'register',
+    loadChildren : () => import('./authentication/register/register.module').then(m =>m.RegisterModule)
   },
   {
     path : 'forgot-password',

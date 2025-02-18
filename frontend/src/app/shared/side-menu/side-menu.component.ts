@@ -148,6 +148,17 @@ export class SideMenuComponent {
         { label: "Communications", icon: "bx bx-envelope", link: "communications.html" },
         { label: "Case Laws", icon: "bx bx-library", link: "case-laws.html" }
       ]
+    },
+    {
+      module: "Settings",
+      icon: "bx bx-folder",
+      active: false,
+      expanded: false,
+      submodules: [
+        { label: "Entity Types", icon: "bx bx-file", link: "it-notices.html" },
+        { label: "Communications", icon: "bx bx-envelope", link: "communications.html" },
+        { label: "Case Laws", icon: "bx bx-library", link: "case-laws.html" }
+      ]
     }
   ];
   
