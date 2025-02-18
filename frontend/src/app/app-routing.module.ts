@@ -5,13 +5,17 @@ import { LayoutComponent } from './shared/layout/layout.component';
 const routes: Routes = [
   {
     path : '',
-    redirectTo : 'auth',
+    redirectTo : 'register',
     pathMatch : 'full'
   },
   {
-    path : 'auth',
-    loadChildren : () => import('./authentication/authentication.module').then(m =>m.AuthenticationModule)
+    path : 'register',
+    loadChildren : () => import('./register/register.module').then(m =>m.RegisterModule)
   },
+  // {
+  //   path : 'auth',
+  //   loadChildren : () => import('./authentication/authentication.module').then(m =>m.AuthenticationModule)
+  // },
   {
     path : '',
     component : LayoutComponent,
