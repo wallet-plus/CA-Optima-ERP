@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { RegisterRequest } from './register.model';
 import { RegisterService } from './register.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -14,7 +15,7 @@ export class RegisterComponent {
   registerForm: FormGroup;
   submitted = false;
 
-  constructor(private fb: FormBuilder, private registerService: RegisterService) {
+  constructor(private router: Router, private fb: FormBuilder, private registerService: RegisterService) {
     this.registerForm = this.fb.group({
       accountType: ['individual', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -38,19 +39,30 @@ export class RegisterComponent {
   onSubmit(): void {
     // Mark all controls as touched so validation errors display if any.
     this.registerForm.markAllAsTouched();
-
+  
     if (this.registerForm.valid) {
       const model: RegisterRequest = this.registerForm.value;
       this.registerService.register(model).subscribe({
         next: (response) => {
-          console.log('Registration successful:', response);
-          // Handle successful registration (e.g., navigate to another page, show a success message, etc.)
+          if(response){
+            this.router.navigate(['/dashboard'], { queryParams: { usertype: 'newUser', accountType: this.registerForm.get('accountType')?.value } });
+          }
         },
         error: (error) => {
           console.error('Registration error:', error);
-          // Handle errors (e.g., display an error message)
+          
+          if (error.status === 422 && error.error.errors) {
+            const validationErrors = error.error.errors;
+            Object.keys(validationErrors).forEach((field) => {
+              const formControl = this.registerForm.get(field);
+              if (formControl) {
+                formControl.setErrors({ serverError: validationErrors[field][0] });
+              }
+            });
+          }
         }
       });
     }
   }
+  
 }

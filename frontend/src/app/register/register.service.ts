@@ -7,7 +7,7 @@ import { RegisterRequest, RegisterResponse } from './register.model';
   providedIn: 'root'
 })
 export class RegisterService {
-  private apiUrl = 'https://your-api-url.com/register'; // Update with your actual endpoint
+  private apiUrl = 'http://localhost:8001/api/register'; // Update with your actual endpoint
 
   constructor(private http: HttpClient) {}
 

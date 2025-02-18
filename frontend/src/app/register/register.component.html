@@ -69,6 +69,9 @@
                                 <small class="text-danger" *ngIf="registerForm.controls['email'].errors?.['email']">
                                     Enter a valid email address.
                                 </small>
+                                <small class="text-danger" *ngIf="registerForm.get('email')?.errors?.['serverError']">
+                                    {{ registerForm.get('email')?.errors?.['serverError'] }}
+                                </small>
                             </div>
                         </div>
 

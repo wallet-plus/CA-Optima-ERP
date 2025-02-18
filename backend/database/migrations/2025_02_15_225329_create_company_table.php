@@ -19,13 +19,13 @@ class CreateCompanyTable extends Migration
         Schema::create('company', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('address');
+            $table->text('address')->nullable();
             $table->string('city')->nullable();
             $table->string('state')->nullable();
             $table->string('postal_code')->nullable();
             $table->string('country')->nullable();
-            $table->string('email')->unique();
-            $table->string('mobile_number');
+            $table->string('email')->unique()->nullable();;
+            $table->string('mobile_number')->nullable();;
             $table->string('telephone')->nullable();
             $table->string('website_url')->nullable();
             $table->string('registration_number')->unique()->nullable();

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Company;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -16,19 +17,53 @@ class AuthController extends Controller
      */
     public function register(Request $request)
     {
+
         $validatedData = $request->validate([
-            'username' => 'required|string|max:255',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|min:6|confirmed',
+            'accountType' => 'required|in:individual,organization',
+            'email' => 'required|email|unique:user',
+            'password' => 'required|min:6',
+            'companyName' => 'nullable|string|required_if:accountType,organization',
         ]);
 
-        $user = User::create([
-            'name' => $validatedData['username'],
-            'email' => $validatedData['email'],
-            'password' => Hash::make($validatedData['password']),
-        ]);
+        if (User::where('email', $validatedData['email'])->exists()) {
+            return response()->json([
+                'message' => 'Email already exists'
+            ], Response::HTTP_OK); // 409 Conflict
+        }
 
-        return response()->json(['message' => 'User registered successfully', 'user' => $user], Response::HTTP_CREATED);
+        if ($validatedData['accountType'] === 'individual') {
+
+
+            // Create a user
+            $user = User::create([
+                'email' => $validatedData['email'],
+                'password' => Hash::make($validatedData['password']),
+            ]);
+
+            return response()->json([
+                'message' => 'Individual user registered successfully',
+                'user' => $user
+            ], Response::HTTP_CREATED);
+        }
+
+        if ($validatedData['accountType'] === 'organization') {
+
+            $company = Company::create([
+                'name' => $validatedData['companyName'],
+            ]);
+    
+            $user = User::create([
+                'email' => $validatedData['email'],
+                'password' => Hash::make($validatedData['password']),
+                'id_company' => $company->id, 
+            ]);
+    
+            return response()->json([
+                'message' => 'Organization user registered successfully',
+                'user' => $user,
+                'company' => $company
+            ], Response::HTTP_CREATED);
+        }
     }
 
     /**

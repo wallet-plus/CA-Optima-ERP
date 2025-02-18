@@ -3,15 +3,18 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
+class User extends Model
 {
-    use HasFactory, Notifiable;
+    use HasFactory;
+
+    protected $table = 'user'; // specify the singular table name
 
     protected $fillable = [
         'name',
+        'id_company',
+        'id_business_unit',
         'gender',
         'date_of_birth',
         'blood_group',

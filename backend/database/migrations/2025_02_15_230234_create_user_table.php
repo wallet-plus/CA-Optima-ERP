@@ -17,20 +17,23 @@ class CreateUserTable extends Migration
 
         Schema::create('user', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->enum('gender', ['Male', 'Female', 'Other']);
-            $table->date('date_of_birth');
-            $table->string('blood_group')->nullable();
-            $table->enum('marital_status', ['Single', 'Married', 'Divorced', 'Widowed']);
-            $table->date('anniversary_date')->nullable();
-            $table->string('guardian_name')->nullable();
-            $table->string('nationality')->default('Indian');
-            $table->string('religion')->nullable();
-            $table->string('profile_picture')->nullable();
+            $table->unsignedBigInteger('id_company')->nullable();
+            $table->unsignedBigInteger('id_business_unit')->nullable();
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('name')->nullable();
+            $table->enum('gender', ['Male', 'Female', 'Other'])->nullable();
+            $table->date('date_of_birth')->nullable();
+            $table->string('blood_group')->nullable();
+            $table->enum('marital_status', ['Single', 'Married', 'Divorced', 'Widowed'])->nullable();
+            $table->date('anniversary_date')->nullable();
+            $table->string('guardian_name')->nullable();
+            $table->string('nationality')->default('Indian')->nullable();
+            $table->string('religion')->nullable();
+            $table->string('profile_picture')->nullable();
             $table->timestamps();
         });
+        
     }
 
     /**
