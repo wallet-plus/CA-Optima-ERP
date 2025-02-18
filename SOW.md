@@ -43,7 +43,13 @@ WalletPlus Software will be designed as a cloud-based or on-premise solution, pr
 |  | Billing & Receipts | 2 weeks | 4 weeks | 3 weeks | 2 weeks |
 |  | Attendance Tracking | 1 week | 2 weeks | 2 weeks | 2 weeks |
 |  | Task Tracking | 2 weeks | 4 weeks | 2 weeks | 2 weeks |
-| **Employees Module** | Authentication (Register, Login, Forgot Password) | 2 weeks | 4 weeks | 2 weeks | 2 weeks |
+| **Employees Module**  | Component      | Design  | Development | Integration | QA & Testing |
+|-----------------------|----------------|---------|-------------|-------------|--------------|
+| **Authentication Module** | Register       | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
+|                       | Login          | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
+|                       | Forgot Password| 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
+|                       | Reset Password | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
+
 | **Audit Module** | Financial Report Preparation | 2 weeks | 6 weeks | 3 weeks | 3 weeks |
 |  | Audit Checklists | 2 weeks | 6 weeks | 3 weeks | 3 weeks |
 |  | JSON Generation for Compliance | 2 weeks | 6 weeks | 3 weeks | 3 weeks |
