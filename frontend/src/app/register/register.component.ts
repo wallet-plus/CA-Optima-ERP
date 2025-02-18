@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { environment } from 'src/environments/environment';
+import { RegisterRequest } from './register.model';
+import { RegisterService } from './register.service';
 
 @Component({
   selector: 'app-register',
@@ -12,9 +14,9 @@ export class RegisterComponent {
   registerForm: FormGroup;
   submitted = false;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private registerService: RegisterService) {
     this.registerForm = this.fb.group({
-      accountType: ['', Validators.required],
+      accountType: ['individual', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
       terms: [false, Validators.requiredTrue],
@@ -34,10 +36,21 @@ export class RegisterComponent {
   }
 
   onSubmit(): void {
+    // Mark all controls as touched so validation errors display if any.
     this.registerForm.markAllAsTouched();
 
     if (this.registerForm.valid) {
-      console.log('Form Submitted!', this.registerForm.value);
+      const model: RegisterRequest = this.registerForm.value;
+      this.registerService.register(model).subscribe({
+        next: (response) => {
+          console.log('Registration successful:', response);
+          // Handle successful registration (e.g., navigate to another page, show a success message, etc.)
+        },
+        error: (error) => {
+          console.error('Registration error:', error);
+          // Handle errors (e.g., display an error message)
+        }
+      });
     }
   }
 }
