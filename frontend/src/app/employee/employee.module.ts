@@ -13,7 +13,7 @@ import { LanguageComponent } from './dialogs/language/language.component';
 import { ExperienceComponent } from './dialogs/experience/experience.component';
 import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {
@@ -31,8 +31,7 @@ const routes: Routes = [
         },
         {
           path : 'details',
-          component : EmployeeDetailsComponent ,
-          
+          component : EmployeeDetailsComponent
         }
       ]
     }
