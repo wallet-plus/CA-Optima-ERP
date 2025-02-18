@@ -128,6 +128,7 @@ WalletPlus Software will be designed as a cloud-based or on-premise solution, pr
 | Email Service | Login         | 18         | 15-Sep-2026 | 25-Sep-2026 |             |
 | Email Service | Forgot Pwd    | 18         | 26-Sep-2026 | 08-Oct-2026 |             |
 | Email Service | Reset Pwd     | 18         | 09-Oct-2026 | 21-Oct-2026 |             |
+---
 
 #### 5.2 Assumptions
 - 2 hours per day
