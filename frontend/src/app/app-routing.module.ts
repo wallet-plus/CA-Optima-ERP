@@ -11,12 +11,20 @@ const routes: Routes = [
   },
   {
     path : 'register',
-    loadChildren : () => import('./register/register.module').then(m =>m.RegisterModule)
+    loadChildren : () => import('./authentication/register/register.module').then(m =>m.RegisterModule)
   },
-  // {
-  //   path : 'auth',
-  //   loadChildren : () => import('./authentication/authentication.module').then(m =>m.AuthenticationModule)
-  // },
+  {
+    path : 'login',
+    loadChildren : () => import('./authentication/login/login.module').then(m =>m.LoginModule)
+  },
+  {
+    path : 'forgot-password',
+    loadChildren : () => import('./authentication/forgot-password/forgot-password.module').then(m =>m.ForgotPasswordModule)
+  },
+  {
+    path : 'reset-password',
+    loadChildren : () => import('./authentication/reset-password/reset-password.module').then(m =>m.ResetPasswordModule)
+  },
   {
     path : '',
     component : LayoutComponent,
