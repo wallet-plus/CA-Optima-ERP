@@ -31,31 +31,35 @@ WalletPlus Software will be designed as a cloud-based or on-premise solution, pr
 - Custom integrations beyond the defined third-party tools.
 
 ---
-
 ### 3. Application Modules & Components
 
-| Module | Component | Design | Development | Integration | QA & Testing |
-|--------|-----------|--------|-------------|-------------|-------------|
-| **ERP Module** | Client Management | 2 weeks | 4 weeks | 2 weeks | 2 weeks |
-|  | Lead Management | 1 week | 3 weeks | 2 weeks | 2 weeks |
-|  | Accounting System | 3 weeks | 6 weeks | 3 weeks | 3 weeks |
-|  | Payroll Management | 2 weeks | 5 weeks | 3 weeks | 2 weeks |
-|  | Billing & Receipts | 2 weeks | 4 weeks | 3 weeks | 2 weeks |
-|  | Attendance Tracking | 1 week | 2 weeks | 2 weeks | 2 weeks |
-|  | Task Tracking | 2 weeks | 4 weeks | 2 weeks | 2 weeks |
-| **Authentication Module** | Register       | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
-|                       | Login          | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
-|                       | Forgot Password| 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
-|                       | Reset Password | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
-| **Audit Module** | Financial Report Preparation | 2 weeks | 6 weeks | 3 weeks | 3 weeks |
-|  | Audit Checklists | 2 weeks | 6 weeks | 3 weeks | 3 weeks |
-|  | JSON Generation for Compliance | 2 weeks | 6 weeks | 3 weeks | 3 weeks |
-| **Income Tax Module** | Tax Computation | 3 weeks | 7 weeks | 4 weeks | 4 weeks |
-|  | ITR Preparation Utility | 3 weeks | 7 weeks | 4 weeks | 4 weeks |
-|  | JSON Generation for E-filing | 3 weeks | 7 weeks | 4 weeks | 4 weeks |
-| **Optional Modules** | Communication Management | 2 weeks | 5 weeks | 3 weeks | 3 weeks |
-|  | Knowledge Management Database | 2 weeks | 5 weeks | 3 weeks | 3 weeks |
-
+| Module                | Component                             | Design  | Development | Integration | QA & Testing |
+|-----------------------|---------------------------------------|---------|-------------|-------------|--------------|
+| **Authentication Module** | Register                            | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
+|                       | Login                                 | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
+|                       | Forgot Password                       | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
+|                       | Reset Password                        | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
+| **Companies List Module** | Create Company                       | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
+|                       | Edit Company                          | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
+| **Business Units Module** | Create Business Unit                 | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
+|                       | Edit Business Unit                    | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
+| **Employees Module**   | Create Employee                       | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
+|                       | Edit Employee                         | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
+| **ERP Module**         | Client Management                     | 2 weeks | 4 weeks     | 2 weeks     | 2 weeks      |
+|                       | Lead Management                       | 1 week  | 3 weeks     | 2 weeks     | 2 weeks      |
+|                       | Accounting System                     | 3 weeks | 6 weeks     | 3 weeks     | 3 weeks      |
+|                       | Payroll Management                    | 2 weeks | 5 weeks     | 3 weeks     | 2 weeks      |
+|                       | Billing & Receipts                    | 2 weeks | 4 weeks     | 3 weeks     | 2 weeks      |
+|                       | Attendance Tracking                   | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
+|                       | Task Tracking                         | 2 weeks | 4 weeks     | 2 weeks     | 2 weeks      |
+| **Audit Module**       | Financial Report Preparation          | 2 weeks | 6 weeks     | 3 weeks     | 3 weeks      |
+|                       | Audit Checklists                      | 2 weeks | 6 weeks     | 3 weeks     | 3 weeks      |
+|                       | JSON Generation for Compliance        | 2 weeks | 6 weeks     | 3 weeks     | 3 weeks      |
+| **Income Tax Module**  | Tax Computation                       | 3 weeks | 7 weeks     | 4 weeks     | 4 weeks      |
+|                       | ITR Preparation Utility               | 3 weeks | 7 weeks     | 4 weeks     | 4 weeks      |
+|                       | JSON Generation for E-filing          | 3 weeks | 7 weeks     | 4 weeks     | 4 weeks      |
+| **Optional Modules**   | Communication Management              | 2 weeks | 5 weeks     | 3 weeks     | 3 weeks      |
+|                       | Knowledge Management Database         | 2 weeks | 5 weeks     | 3 weeks     | 3 weeks      |
 ---
 
 ### 4. Deliverables
