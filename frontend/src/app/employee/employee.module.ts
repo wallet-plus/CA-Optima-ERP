@@ -13,6 +13,7 @@ import { LanguageComponent } from './dialogs/language/language.component';
 import { ExperienceComponent } from './dialogs/experience/experience.component';
 import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {
@@ -54,7 +55,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule 
   ]
 })
 export class EmployeeModule { }

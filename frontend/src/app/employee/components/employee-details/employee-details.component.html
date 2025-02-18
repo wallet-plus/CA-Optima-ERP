@@ -1,4 +1,4 @@
-<div class="container-xxl flex-grow-1 container-p-y">
+<div class="container-xxl flex-grow-1 container-p-y" >
 
   <!-- Header -->
   <div class="row">
@@ -41,33 +41,37 @@
   
   
   <mat-tab-group [(selectedIndex)]="selectedTab" class="nav nav-pills flex-column flex-sm-row mb-6 gap-sm-0 gap-2">
-    <mat-tab (click)="selectedTab = 0">
+    <mat-tab>
       <ng-template mat-tab-label>
         <i class="icon-base bx bx-user icon-sm me-1_5"></i> Profile
       </ng-template>
     </mat-tab>
   
-    <mat-tab (click)="selectedTab = 1">
+    <mat-tab>
       <ng-template mat-tab-label>
         <i class="icon-base bx bx-group icon-sm me-1_5"></i> Teams
       </ng-template>
     </mat-tab>
   
-    <mat-tab (click)="selectedTab = 2">
+    <mat-tab>
       <ng-template mat-tab-label>
         <i class="icon-base bx bx-grid-alt icon-sm me-1_5"></i> Projects
       </ng-template>
     </mat-tab>
   
-    <mat-tab (click)="selectedTab = 3">
+    <mat-tab>
       <ng-template mat-tab-label>
         <i class="icon-base bx bx-link icon-sm me-1_5"></i> Connections
       </ng-template>
     </mat-tab>
   </mat-tab-group>
   
+  
 
   <!-- <router-outlet></router-outlet> -->
-  <app-personal-information *ngIf="selectedTab === 0"></app-personal-information>
+   <div *ngIf="selectedTab === 0" [@tabChange]>
+    <app-personal-information ></app-personal-information>
+   </div>
+  
 
 </div>

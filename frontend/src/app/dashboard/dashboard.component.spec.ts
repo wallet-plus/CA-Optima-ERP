@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { DashboardComponent } from './dashboard.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
@@ -8,7 +8,8 @@ describe('DashboardComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DashboardComponent]
+      declarations: [DashboardComponent],
+      imports: [MatDialogModule]  // Add MatDialogModule to imports
     });
     fixture = TestBed.createComponent(DashboardComponent);
     component = fixture.componentInstance;

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PersonalInformationComponent } from './personal-information.component';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 describe('PersonalInformationComponent', () => {
   let component: PersonalInformationComponent;
@@ -8,7 +9,11 @@ describe('PersonalInformationComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PersonalInformationComponent]
+      declarations: [PersonalInformationComponent],
+      providers: [
+        { provide: MatDialog, useValue: {} },
+        { provide: MatDialogRef, useValue: {} },
+      ],  
     });
     fixture = TestBed.createComponent(PersonalInformationComponent);
     component = fixture.componentInstance;
