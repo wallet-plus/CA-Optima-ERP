@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from './register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -14,6 +15,8 @@ const routes: Routes = [
   declarations: [RegisterComponent],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
     RouterModule.forChild(routes)
   ]
 })
