@@ -33,33 +33,41 @@ WalletPlus Software will be designed as a cloud-based or on-premise solution, pr
 ---
 ### 3. Application Modules & Components
 
-| Module                | Component                             | Design  | Development | Integration | QA & Testing |
-|-----------------------|---------------------------------------|---------|-------------|-------------|--------------|
-| **Authentication Module** | Register                            | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
-|                       | Login                                 | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
-|                       | Forgot Password                       | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
-|                       | Reset Password                        | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
-| **Companies List Module** | Create Company                       | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
-|                       | Edit Company                          | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
-| **Business Units Module** | Create Business Unit                 | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
-|                       | Edit Business Unit                    | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
-| **Employees Module**   | Create Employee                       | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
-|                       | Edit Employee                         | 2 weeks | 3 weeks     | 2 weeks     | 2 weeks      |
-| **ERP Module**         | Client Management                     | 2 weeks | 4 weeks     | 2 weeks     | 2 weeks      |
-|                       | Lead Management                       | 1 week  | 3 weeks     | 2 weeks     | 2 weeks      |
-|                       | Accounting System                     | 3 weeks | 6 weeks     | 3 weeks     | 3 weeks      |
-|                       | Payroll Management                    | 2 weeks | 5 weeks     | 3 weeks     | 2 weeks      |
-|                       | Billing & Receipts                    | 2 weeks | 4 weeks     | 3 weeks     | 2 weeks      |
-|                       | Attendance Tracking                   | 1 week  | 2 weeks     | 2 weeks     | 2 weeks      |
-|                       | Task Tracking                         | 2 weeks | 4 weeks     | 2 weeks     | 2 weeks      |
-| **Audit Module**       | Financial Report Preparation          | 2 weeks | 6 weeks     | 3 weeks     | 3 weeks      |
-|                       | Audit Checklists                      | 2 weeks | 6 weeks     | 3 weeks     | 3 weeks      |
-|                       | JSON Generation for Compliance        | 2 weeks | 6 weeks     | 3 weeks     | 3 weeks      |
-| **Income Tax Module**  | Tax Computation                       | 3 weeks | 7 weeks     | 4 weeks     | 4 weeks      |
-|                       | ITR Preparation Utility               | 3 weeks | 7 weeks     | 4 weeks     | 4 weeks      |
-|                       | JSON Generation for E-filing          | 3 weeks | 7 weeks     | 4 weeks     | 4 weeks      |
-| **Optional Modules**   | Communication Management              | 2 weeks | 5 weeks     | 3 weeks     | 3 weeks      |
-|                       | Knowledge Management Database         | 2 weeks | 5 weeks     | 3 weeks     | 3 weeks      |
+# Project Timeline (in Hours)
+
+| **Module**  | **Component**  | **Design** | **Dev** | **Intg** | **QA** |
+|------------|--------------|------------|---------|---------|-------|
+| **Auth**   | Register     | 8          | 4       | 6       | 6     |
+|           | Login        | 4          | 6       | 6       | 6     |
+|           | Forgot Pwd   | 4          | 6       | 6       | 6     |
+|           | Reset Pwd    | 4          | 6       | 6       | 6     |
+| **Languages** | English  | 8         | 6       | 4       | 4     |
+|           | Hindi       | 8          | 6       | 4       | 4     |
+| **Companies** | Create    | 8          | 8       | 6       | 6     |
+|           | Edit         | 6          | 8       | 6       | 6     |
+| **Business**  | Create    | 8          | 8       | 6       | 6     |
+|           | Edit         | 6          | 8       | 6       | 6     |
+| **Employees** | Create   | 8          | 8       | 6       | 6     |
+|           | Edit         | 6          | 8       | 6       | 6     |
+| **ERP**    | Clients     | 8          | 10      | 6       | 6     |
+|           | Leads       | 6          | 8       | 6       | 6     |
+|           | Accounts    | 10         | 12      | 8       | 8     |
+|           | Payroll     | 8          | 10      | 8       | 6     |
+|           | Billing     | 8          | 10      | 8       | 6     |
+|           | Attendance  | 6          | 8       | 6       | 6     |
+| **Audit**  | Reports     | 8          | 12      | 8       | 8     |
+|           | Checklist   | 8          | 12      | 8       | 8     |
+|           | JSON Comp.  | 8          | 12      | 8       | 8     |
+| **Tax**    | Compute    | 10         | 14      | 10      | 10    |
+|           | ITR Prep    | 10         | 14      | 10      | 10    |
+|           | JSON E-file | 10         | 14      | 10      | 10    |
+| **Optional** | Comm. Mgmt | 8         | 12      | 8       | 8     |
+|           | Knowledge   | 8          | 12      | 8       | 8     |
+| **Email Service** | Templates | 4    | 6       | 4       | 4     |
+|           | Register    | 4          | 6       | 4       | 4     |
+|           | Login       | 4          | 6       | 4       | 4     |
+|           | Forgot Pwd  | 4          | 6       | 4       | 4     |
+|           | Reset Pwd   | 4          | 6       | 4       | 4     |       
 ---
 
 ### 4. Deliverables
