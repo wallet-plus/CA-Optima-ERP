@@ -96,7 +96,7 @@ WalletPlus Software will be designed as a cloud-based or on-premise solution, pr
 # Project Timeline
 
 | Module       | Component        | Total Hours | Start Date  | End Date    |Actual End Date    |
-|-------------|----------------|------------|------------|------------|
+|-------------|----------------|------------|------------|------------|------------|
 | Auth        | Register        | 24         | 18-Feb-2025 | 05-Mar-2025 | 18-Feb-2025 |
 | Auth        | Login           | 22         | 06-Mar-2025 | 20-Mar-2025 |             |
 | Auth        | Forgot Pwd      | 22         | 21-Mar-2025 | 04-Apr-2025 |             |
