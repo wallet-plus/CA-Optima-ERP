@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { LeadsComponent } from './components/leads/leads.component';
 import { ClientsComponent } from './components/clients/clients.component';
+import { ClientDetailsComponent } from './components/client-details/client-details.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
         component: ClientsComponent
       },
       {
+        path: 'client-details',
+        component: ClientDetailsComponent
+      },
+      {
         path: 'leads',
         component: LeadsComponent
       }
@@ -26,7 +31,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ClientsComponent, LeadsComponent],
+  declarations: [ClientsComponent, LeadsComponent, ClientDetailsComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)  
