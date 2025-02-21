@@ -1,0 +1,136 @@
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Leads/</span> Create Lead</h4>
+    
+    <div class="row">
+      <!-- Section 1: Contact & Business Information (Width 8) -->
+      <div class="col-xl-8">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h5 class="mb-0">Contact & Company Information</h5>
+          </div>
+          <div class="card-body">
+            <form>
+              <!-- Contact Information -->
+              <div class="mb-3">
+                <label class="form-label" for="lead-name">Full Name</label>
+                <input type="text" class="form-control" id="lead-name" placeholder="John Doe" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="lead-contact-person">Company (Contact Person)</label>
+                <input type="text" class="form-control" id="lead-contact-person" placeholder="ACME Inc." />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="lead-email">Email</label>
+                <div class="input-group input-group-merge">
+                  <input type="email" id="lead-email" class="form-control" placeholder="john.doe" />
+                  <span class="input-group-text">@example.com</span>
+                </div>
+                <div class="form-text">You can use letters, numbers & periods</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="lead-phone">Phone No</label>
+                <input type="text" id="lead-phone" class="form-control phone-mask" placeholder="658 799 8941" />
+              </div>
+              
+              <!-- Business Information -->
+              <div class="mb-3">
+                <label class="form-label" for="lead-business-type">Business Type</label>
+                <select class="form-select" id="lead-business-type">
+                  <option value="">Select Business Type</option>
+                  <option value="Individual">Individual</option>
+                  <option value="LLP">LLP</option>
+                  <option value="Firm">Firm</option>
+                  <option value="Company">Company</option>
+                  <option value="Trust">Trust</option>
+                  <option value="Non-Profit">Non-Profit</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="lead-industry-type">Industry Type</label>
+                <input type="text" class="form-control" id="lead-industry-type" placeholder="Enter industry" />
+              </div>
+  
+              <!-- Lead Information -->
+              <div class="mb-3">
+                <label class="form-label" for="lead-stage">Lead Stage</label>
+                <select class="form-select" id="lead-stage">
+                  <option value="New">New</option>
+                  <option value="Contacted">Contacted</option>
+                  <option value="Proposal Sent">Proposal Sent</option>
+                  <option value="Negotiation">Negotiation</option>
+                  <option value="Converted">Converted</option>
+                  <option value="Dropped">Dropped</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="expected-revenue">Expected Revenue</label>
+                <input type="number" step="0.01" class="form-control" id="expected-revenue" placeholder="0.00" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Section 2: Assignment & Referral (Width 4) -->
+      <div class="col-xl-4">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h5 class="mb-0">Assignment & Referral Details</h5>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label" for="lead-assigned-to">Assigned To</label>
+                <input type="text" class="form-control" id="lead-assigned-to" placeholder="User name or ID" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="lead-referred-by">Referred By</label>
+                <input type="text" class="form-control" id="lead-referred-by" placeholder="Who referred the lead" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="lead-source">Source</label>
+                <input type="text" class="form-control" id="lead-source" placeholder="e.g. Referral, Website" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="follow-up-date">Follow Up Date</label>
+                <input type="date" class="form-control" id="follow-up-date" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="lead-score">Lead Score</label>
+                <input type="number" class="form-control" id="lead-score" placeholder="0" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="conversion-date">Conversion Date</label>
+                <input type="date" class="form-control" id="conversion-date" />
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Section 3: Additional Details (Width 12) -->
+      <div class="col-xl-12">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h5 class="mb-0">Additional Details</h5>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label" for="lead-created-by">Created By</label>
+                <input type="text" class="form-control" id="lead-created-by" placeholder="Logged in user" readonly />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="lead-comments">Comments</label>
+                <textarea id="lead-comments" class="form-control" placeholder="Additional details..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  

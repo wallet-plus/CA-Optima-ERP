@@ -1,0 +1,30 @@
+<!-- employee-details.component.html -->
+<mat-tab-group [(selectedIndex)]="selectedTab" class="nav nav-pills flex-column flex-sm-row mb-6 gap-sm-0 gap-2">
+  <mat-tab *ngIf="selectedTab === 0" [@tabChange]>
+    <ng-template mat-tab-label>
+      <i class="icon-base bx bx-user icon-sm me-1_5"></i> Profile
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab *ngIf="selectedTab === 1" [@tabChange]>
+    <ng-template mat-tab-label>
+      <i class="icon-base bx bx-group icon-sm me-1_5"></i> Teams
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab *ngIf="selectedTab === 2" [@tabChange]>
+    <ng-template mat-tab-label>
+      <i class="icon-base bx bx-grid-alt icon-sm me-1_5"></i> Projects
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab *ngIf="selectedTab === 3" [@tabChange]>
+    <ng-template mat-tab-label>
+      <i class="icon-base bx bx-link icon-sm me-1_5"></i> Connections
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
+
+<div *ngIf="selectedTab === 0" [@tabChange]>
+  <app-personal-information></app-personal-information>
+</div>

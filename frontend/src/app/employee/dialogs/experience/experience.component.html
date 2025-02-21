@@ -1,0 +1,72 @@
+<div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Experience Details</h5>
+      <button type="button" class="btn-close" aria-label="Close" (click)="closeDialog()"></button>
+    </div>
+    <div class="modal-body">
+      <form [formGroup]="experienceForm">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="form-label">Organization Name</label>
+            <input type="text" class="form-control" formControlName="organization_name">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Period From</label>
+            <input type="date" class="form-control" formControlName="period_from">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Period To</label>
+            <input type="date" class="form-control" formControlName="period_to">
+          </div>
+        </div>
+  
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="form-label">Designation</label>
+            <input type="text" class="form-control" formControlName="designation">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">UAN No.</label>
+            <input type="text" class="form-control" formControlName="uan_no">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">PF No.</label>
+            <input type="text" class="form-control" formControlName="pf_no">
+          </div>
+        </div>
+  
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="form-label">ESI No.</label>
+            <input type="text" class="form-control" formControlName="esi_no">
+          </div>
+          <div class="col-md-8">
+            <label class="form-label">Upload Document</label>
+            <!-- (change)="onFileChange($event)" -->
+            <input type="file" class="form-control" >
+          </div>
+        </div>
+  
+        <div class="row g-3">
+          <div class="col-md-12">
+            <label class="form-label">Key Role & Responsibilities</label>
+            <textarea class="form-control" formControlName="key_role_responsibility" rows="3"></textarea>
+          </div>
+        </div>
+  
+        <div class="row g-3">
+          <div class="col-md-12">
+            <label class="form-label">Significant Achievements</label>
+            <textarea class="form-control" formControlName="significant_achievement" rows="3"></textarea>
+          </div>
+        </div>
+  
+      </form>
+    </div>
+  
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-secondary" (click)="closeDialog()">Close</button>
+      <button type="button" class="btn btn-primary" (click)="saveChanges()">Save Changes</button>
+    </div>
+  </div>
+  
